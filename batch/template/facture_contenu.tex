@@ -1,0 +1,106 @@
+% Bloc auto-entrepreneur
+\begin{textblock}{2}(0,0)
+\begin{huge}\aenom\end{huge}
+\vskip 0cm
+{\fontsize{0.44cm}{0.5cm}
+\aeadresse{}\\
+\aeville{}\\
+\aepays{} }
+\vskip 0.2cm
+{\fontsize{0.44cm}{0.5cm}
+Siret\,:\hspace*{0.5cm}\aesiret{}\\
+Tél\,:\hspace*{0.7cm}\aetel{}\\
+Email\,:\hspace*{0.3cm}\aeemail{} }
+\end{textblock}
+
+% Bloc numéro de facture
+\begin{textblock}{2}(4,0)
+\begin{huge} Facture : \hfill \facturenum{}\end{huge}
+\vskip 0.1cm
+{\fontsize{0.44cm}{0.5cm}%
+Date : \facturedate{}{}
+\hfill Page\,: 1 / 1}
+\end{textblock}
+
+% Bloc Client
+\begin{textblock}{3}(3,1)
+\begin{huge} \clientnom{}\end{huge}
+\vskip 0cm
+{\fontsize{0.44cm}{0.5cm}
+\clientadresse{} \\
+\clientville{} \\
+\clientpays{}
+}
+\vskip 0cm
+\end{textblock}
+
+% Bloc objet facture
+\begin{textblock}{6}[0,1.4](0,2)
+{\fontsize{0.44cm}{0.5cm}
+\textbf{Objet : \factureobjet{}} }
+\end{textblock}
+
+% Bloc lignes de facture
+\begin{textblock}{6}(0,2)
+\begin{tabular}{|L{8.7cm}|R{2.5cm}|R{2.5cm}|R{2.5cm}|}
+\hline \rowcolor{lightgray} \textbf{DESIGNATION} & \textbf{QUANTITE} &  \textbf{PU HT}  &  \textbf{TOTAL HT}\\
+\hline
+\, & \, & \, & \, \\
+\adesign{} & \aqte{} & \apu{} & \atotal{} \\
+\qquad \adesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\bdesign{} & \bqte{} & \bpu{} & \btotal{} \\
+\qquad \bdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\cdesign{} & \cqte{} & \cpu{} & \ctotal{} \\
+\qquad \cdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\ddesign{} & \dqte{} & \dpu{} & \dtotal{} \\
+\qquad \ddesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\edesign{} & \eqte{} & \epu{} & \etotal{} \\
+\qquad \edesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\fdesign{} & \fqte{} & \fpu{} & \ftotal{} \\
+\qquad \fdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\gdesign{} & \gqte{} & \gpu{} & \gtotal{} \\
+\qquad \gdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\hdesign{} & \hqte{} & \hpu{} & \htotal{} \\
+\qquad \hdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\idesign{} & \iqte{} & \ipu{} & \itotal{} \\
+\qquad \idesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\jdesign{} & \jqte{} & \jpu{} & \jtotal{} \\
+\qquad \jdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\kdesign{} & \kqte{} & \kpu{} & \ktotal{} \\
+\qquad \kdesignbis{} & \, & \, & \, \\
+\, & \, & \, & \, \\
+\hline 
+\end{tabular}
+\end{textblock}
+
+% Bloc mode de paiement
+\begin{textblock}{3}(0,7)
+Echéance : A réception facture\\
+Mode de paiement : virement\\
+Banque : \aebanque{}\\
+BIC : \aebic{}\\
+IBAN : \aeiban{}
+\end{textblock}
+
+% Bloc Total facture
+\begin{textblock}{2}(4,7)
+Montant HT\hspace*{0.3cm} \hfill \facturetotal{}\\
+\textbf{Net a payer}\hspace*{0.3cm}\hfill\textbf{\facturetotal{}}
+\vskip 0.2cm
+{\footnotesize TVA non applicable, art 293B du CGI}
+\end{textblock}
+
+% Bloc legal
+\begin{textblock}{6}(0,8)
+{\footnotesize  \aelegal{}}
+\end{textblock}

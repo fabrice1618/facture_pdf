@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pdflatex:
+    container_name: pdflatex
+    build: .
+    volumes:
+      - ./batch:/root/batch
+      - ./script:/root/script
+      - ./files:/root/files
+    restart: always
+

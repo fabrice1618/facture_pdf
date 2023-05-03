@@ -1,0 +1,5 @@
+config_ae_fabrice.tex
+facture_contenu.aux
+doc/
+*.tgz
+*.pdf
